@@ -1,9 +1,9 @@
 6.1
-- resultOfOperation = resultOf
--
--
--
--
+- resultOfOperation = resultOfArithmeticsOperation
+- sumArray = sumOfNumbersInArray
+- countPeople = countOfPeopleInCity
+- woodCount = countOfWoodInStorage
+- percentLight = intensityLightInRoom
   
 6.2
 - arrayListOfHuman
@@ -13,8 +13,8 @@
   
 6.3
 - resultOfSubtraction, resultOfAddition  в контексте арифметических операций
--
--
+- levelOfHero, hitsOfHero в контексте класса персонажа
+- bugatti, honda в контексте класса машиня
   
 6.4
 - gor = horizontalSizeOfField
