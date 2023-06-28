@@ -16,7 +16,7 @@
      
  4. неинформативные имёна
 
-    05. 
+    05. color = colorOfCar
     06. stringName = nameOfStudent
 
      
