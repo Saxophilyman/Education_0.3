@@ -4,7 +4,7 @@
   02. pizza_Ubizza = Pizzeria 
   03. poezd = Train
   04. makingPizza = FoodMaker
-  05. 
+  05. AutoFulling = AutoFullOfIngredients
 
 
 2. Одно слово для каждой концепции
