@@ -16,5 +16,5 @@
   04. и тогда выбирать как основу для названия метода get по проекту в целом, то есть getProtectionFromAttack, а не return/retrieve + DefenceFromAttack
   05. метод getResultOfAttack
   06. и раз был выбран термин defence, использовать  applyDefenceAgainstAttack, а не applyProtectionAgainstAttack
-  07. 
+  07. и если использовать ordinaryAttack, придерживаться стилистики "ordinary", избегая использования normal, usual, чтобы недопустить путаницы
 
