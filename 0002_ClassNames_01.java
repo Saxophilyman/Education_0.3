@@ -8,12 +8,13 @@
 
 
 2. Одно слово для каждой концепции
-  
-  01.
-  02
-  03.
-  04.
-  05.
-  06.
-  07.
+    если писать класс Attack, то концепция "атаки" должна быть распространена на все производные для атаки
+    
+  01. то есть лучше назвать функцию quickAttack, а не quickAssault
+  02. переменную defenceFromAttack, а не defence
+  03. getPowerOfAttack
+  04. и тогда выбирать как основу для названия метода get по проекту в целом, то есть getProtectionFromAttack, а не return/retrieve + DefenceFromAttack
+  05. метод getResultOfAttack
+  06. и раз был выбран термин defence, использовать  applyDefenceAgainstAttack, а не applyProtectionAgainstAttack
+  07. 
 
