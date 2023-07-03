@@ -5,11 +5,13 @@
   02. recruit2 = recruitHomeGuardInNumber
   03. setWaywodeMain = setInLeadingOfRegimentWaywode
   04. setWaywodeRight = setInRightHandOfRegimentWaywode
-  05. getEconomic = getEconomicInfoOfCity
-  06. getAllEconomic = getEconomicInfoOfPrincedom
+  05. setWaywodeLeft = setInLeftHandOfRegimentWaywode
+  06. select = selectCurrentPerson
   07. attachLands  = attachLandsToPrincedom
   08. donateLands = giveLandsToServant
   09. sendEmbassyToNegotiate = sendDiplomaticMissionToCountry
-  10. 
-  11.
-  12. select = selectCurrentPerson
+  10. tribute = setTributeFromPeople
+  11. getEconomic = getEconomicInfoOfCity
+  12. getAllEconomic = getEconomicInfoOfPrincedom
+
+    
