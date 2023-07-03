@@ -3,8 +3,8 @@
 
   1. recruit1 = recruitSoldiersInNumber
   2. recruit2 = recruitHomeGuardInNumber
-  3. setWaywode = setInLeadingRegimentWaywode
-  4.
+  3. setWaywodeMain = setInLeadingOfRegimentWaywode
+  4. setWaywodeRight = setInRightHandOfRegimentWaywode
   5.
   6.
   7.
