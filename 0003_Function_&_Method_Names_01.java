@@ -1,15 +1,15 @@
 поправка к предыдущему заданию:
 Если процедура – метод класса, то имя объекта в её имя включать не нужно, потому что объекты и так входят в состав вызовов
 
-  1. recruit1 = recruitSoldiersInNumber
-  2. recruit2 = recruitHomeGuardInNumber
-  3. setWaywodeMain = setInLeadingOfRegimentWaywode
-  4. setWaywodeRight = setInRightHandOfRegimentWaywode
-  5.
-  6.
-  7.
-  8.
-  9.
-  10.
+  01. recruit1 = recruitSoldiersInNumber
+  02. recruit2 = recruitHomeGuardInNumber
+  03. setWaywodeMain = setInLeadingOfRegimentWaywode
+  04. setWaywodeRight = setInRightHandOfRegimentWaywode
+  05. getEconomic = getEconomicInfoOfCity
+  06. getAllEconomic = getEconomicInfoOfPrincedom
+  07. attachLands  = attachLandsToPrincedom
+  08. donateLands = giveLandsToServant
+  09. sendEmbassyToNegotiate = sendDiplomaticMissionToCountry
+  10. 
   11.
-  12.
+  12. select = selectCurrentPerson
