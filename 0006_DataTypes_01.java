@@ -1,5 +1,5 @@
 01. магическая строка "bmp" в константу
-    IMAGE_FOMAT = "bmp";
+    IMAGE_FORMAT = "bmp";
   
 02. изменение точности с 10.1f на 10.1d
   
@@ -11,7 +11,7 @@
 05. изменение сравнения 1000.0d > 50 на 1000.0d > 50.0 
   
 06. вместо магической строки "txt" определяем в константу
-    FILE_FOMAT = ".txt";
+    FILE_FORMAT = ".txt";
 
 07. изменение точности с 3.0004f на 3.0004d
 
@@ -22,9 +22,11 @@
     тогда в случае int a = 11111111;
     вместо float b = a; лучше указать float b = (float) a;
   
-10. 
+10. вместо прямого обозначения "Tahoma" в параметрах можно использовать константу
+    NAME_OF_STYLE_FOR_FONT = "Tahoma";
     
-11.
+11. вместо float number_pi = 3.14; 
+    определить переменную double number_pi = 3.14;
     
 12. вместо проверки множества условий 
         arrCountRepeatForOutNumbers.size() == 1 || (arrCountRepeatForOutNumbers.size() <= 2 &&
