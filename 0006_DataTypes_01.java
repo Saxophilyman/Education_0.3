@@ -18,8 +18,24 @@
 08. при возведении в степень методом exponential(){FirstArgument.pow(SecondArgument)} лучше проверить не будет ли число выходить за границы int
     или использовать класс bigDecimal
 
-09. 
+09. если правильно понимаю, то даже скрытые преобразования лучше указывать, верно?
+    тогда в случае int a = 11111111;
+    float b = a; лучше указать float b = (float) a;
   
-  10.
+10. 
   11.
-  12.
+  12. вместо проверки множества условий 
+        arrCountRepeatForOutNumbers.size() == 1 || (arrCountRepeatForOutNumbers.size() <= 2 &&
+        arrCountRepeatForOutNumbers.get(0) + 1 >= arrCountRepeatForOutNumbers.get(1) &&
+        arrCountRepeatForOutNumbers.get(0) - 1 <= arrCountRepeatForOutNumbers.get(1) &&
+        (lastCheckArrOfCountRepeat.get(0) <= 1 || lastCheckArrOfCountRepeat.get(1) <= 1));
+        можно было ввести дополнительные булевые переменные 
+
+        boolean isStringValidInFirstCondition = (arrCountRepeatForOutNumbers.size() <= 2 && 
+                                                 arrCountRepeatForOutNumbers.get(0) + 1 >= arrCountRepeatForOutNumbers.get(1) &&
+                                                 arrCountRepeatForOutNumbers.get(0) - 1 <= arrCountRepeatForOutNumbers.get(1));
+
+        boolean isStringValidInSecondCondition = (lastCheckArrOfCountRepeat.get(0) <= 1 || lastCheckArrOfCountRepeat.get(1) <= 1);
+                
+        затем проверить их if (arrCountRepeatForOutNumbers.size() == 1 || (isStringValidInFirstCondition && isStringValidInSecondCondition))
+        Наверное тоже запутано, но слегка более понятно для отслеживания проверки условий
