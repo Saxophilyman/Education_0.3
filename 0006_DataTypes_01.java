@@ -23,8 +23,10 @@
     float b = a; лучше указать float b = (float) a;
   
 10. 
-  11.
-  12. вместо проверки множества условий 
+    
+11.
+    
+12. вместо проверки множества условий 
         arrCountRepeatForOutNumbers.size() == 1 || (arrCountRepeatForOutNumbers.size() <= 2 &&
         arrCountRepeatForOutNumbers.get(0) + 1 >= arrCountRepeatForOutNumbers.get(1) &&
         arrCountRepeatForOutNumbers.get(0) - 1 <= arrCountRepeatForOutNumbers.get(1) &&
