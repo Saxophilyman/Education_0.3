@@ -28,8 +28,11 @@
     04. Также завершена работа с переменной по окончании выполнения блока кода, с присвоением "недопустимого" значения -1
         year = -1;
 
-    05.
-      
+    05. Обозначены неизменяемые переменные как final
+          final int NUMBER_ZERO_IN_ASCII = 48;
+          final int NUMBER_NINE_IN_ASCII = 57;
+          final int SYMBOL_WHITE_WALKERS_IN_ASCII = 61;
+
     06.
       
     07.
