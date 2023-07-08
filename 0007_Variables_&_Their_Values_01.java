@@ -33,11 +33,38 @@
           final int NUMBER_NINE_IN_ASCII = 57;
           final int SYMBOL_WHITE_WALKERS_IN_ASCII = 61;
 
-    06.
-      
-    07.
-      
-    08.
+    06. Перенесено объявление переменной StringBuilder s = new StringBuilder(); из начала блока кода перенесена непосредственно к месту её использования
+        public static String Keymaker(int k) {        
+            int[] doors = new int[k];
+            for (int step = 1; step <= k; step++) {
+                //код
+            }
+
+            StringBuilder s = new StringBuilder();
+            for (int index = 0; index < doors.length; index++) {
+                s.append(doors[index]);
+            }
+            return s.toString();
+         }
+
+    07. метод считывает введённые в консоль числа для определения размеров поля для игры
+        применён assert для проверки на предмет допустимости их значений != null
+        
+        private static int readConcoleFieldSize(String indicatingOfLinesOrColumns) {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String readConsoleSize = null;
+        int turnNumberOfFieldSize = 0;
+        try {
+            readConsoleSize = reader.readLine();
+        } catch (Exception e) {
+            System.out.println("Что-то пошло не так, извините");
+        }
+
+        assert readConsoleSize != null;
+        //код
+        }
+
+    08. 
       
     09.
       
