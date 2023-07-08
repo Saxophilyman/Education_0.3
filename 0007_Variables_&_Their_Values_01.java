@@ -109,12 +109,21 @@
         int widthText1 = g.getFontMetrics().stringWidth(text1);
         int widthText2 = g.getFontMetrics().stringWidth(text2);
       
-    11.
+    11. Обозначена неизменяемая переменная как final
+        final int MIN_LENGHT_OF_STRING_FOR_MAYBE_TRUE = 5;
       
-    12.
+    12. Обозначены неизменяемые переменные как final
+        final int IN_HEXADECIMAL_SYSTEM_OF_CALCULATION = 16;  
+        final int IN_OCTAL_SYSTEM_OF_CALCULATION = 8;
       
-    13.
+    13. Обозначена неизменяемая переменная как final
+        final int COMMAND_DELETE = 2;
+
+    14. Обозначена неизменяемая переменная как final
+        final int FONT_SIZE_OF_TEXT = 12;
       
-    14.
-      
-    15.
+    15. Переменная инициализированна непосредственно перед циклом
+        int countOfChars = 0;
+        for (int i = 0; i < string.lenght; i++) {
+                //код
+            }
