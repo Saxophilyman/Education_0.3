@@ -40,10 +40,32 @@
         //дальнейший код
 
         
-    03. Уменьшение области видимости переменных random / generatedNumber до завершения цикла fori:
+    03. Уменьшение области видимости переменной id до завершения цикла fori (превращение её из глобальной в локальную) : 
+    before:   
+        String name = «John»;
+        int id = 0;
+        for (int i = 0; i<= 5; i++) {
+             id++;
+        if (id == 4) {
+        System.out.println(«id: « + id);
+        System.out.println(«name: « + name);
+        }
+        }
 
 
-        
+     after:
+        String name = «John»;
+        {
+        int id = 0;
+        for (int i = 0; i<= 5; i++) {
+        id++;
+        if (id == 4) {
+        System.out.println(«id: « + id);
+        System.out.println(«name: « + name);
+        }
+        }
+        }
+
     04.
     05.
     06.
