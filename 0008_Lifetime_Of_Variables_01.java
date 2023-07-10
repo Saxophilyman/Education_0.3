@@ -100,15 +100,15 @@
     05. Инициализация и скрытие переменной внутри метода:
     before:   
         int amount;
-        private boolean method() {
+        private boolean methodForRandomCheck() {
         amount = Random.nextInt(0, 100);
-        return amount == 50;
+        return amount => 50;
         }
 
     after:
-        private boolean method() {
+        private boolean methodForRandomCheck() {
         int amount = Random.nextInt(0, 100);
-        return amount == 50;
+        return amount => 50;
         }
     
     06.
