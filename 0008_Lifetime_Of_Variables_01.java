@@ -66,8 +66,40 @@
         }
         }
 
-    04.
+    04. Уменьшение области видимости переменных до завершения первого цикла fori, после которого они не используются
+    before:    
+        String[] text = s.split(" ", 0);
+        ArrayList<String> list = new ArrayList<>();
+        list.add(0, "");
+        int indexForLIst = 0;
+        int countLen = len;
+        boolean newString = true;
+        for (int i = 0; i < text.length; i++) {
+            //много кода
+        }
+        fori(){
+            //код
+        }
+
+    after:    
+        String[] text = s.split(" ", 0);
+        ArrayList<String> list = new ArrayList<>();
+        list.add(0, "");
+        {
+        int indexForLIst = 0;
+        int countLen = len;
+        boolean newString = true;
+        for (int i = 0; i < text.length; i++) {
+            //много кода
+        }
+        }
+        fori(){
+            //код
+        }
+
+
     05.
+        
     06.
     07.
     08.
