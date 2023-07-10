@@ -98,8 +98,20 @@
         }
 
 
-    05.
-        
+    05. Инициализация и скрытие переменной внутри метода:
+    before:   
+        int amount;
+        private boolean method() {
+        amount = Random.nextInt(0, 100);
+        return amount == 50;
+        }
+
+    after:
+        private boolean method() {
+        int amount = Random.nextInt(0, 100);
+        return amount == 50;
+        }
+    
     06.
     07.
     08.
