@@ -7,10 +7,10 @@
 
     after:
         {
-        int[] array = {0};
-        do {  
-            array = modifyNumber(array); 
-        } while (array.length < 100);
+            int[] array = {0};
+            do {  
+                array = modifyNumber(array); 
+            } while (array.length < 100);
         }
 
 
@@ -29,12 +29,12 @@
     after:
         int[] arrayOfTelemetric = new int[arrayLength];
         {
-        Random random = new Random();
-        int generatedNumber;
-        for (int i = 0; i < arrayLength; i++) {
-            generatedNumber = random.nextInt(256) + 1;
-            //код
-        }
+            Random random = new Random();
+            int generatedNumber;
+            for (int i = 0; i < arrayLength; i++) {
+                generatedNumber = random.nextInt(256) + 1;
+                //код
+            }
         }
         //дальнейший код
 
@@ -55,14 +55,14 @@
      after:
         String nameOfPerson = «John»;
         {
-        int id = 0;
-        for (int i = 0; i<= 5; i++) {
-        id++;
-        if (id == 4) {
-        System.out.println(«id: « + id);
-        System.out.println(«nameOfPerson: « + name);
-        }
-        }
+            int id = 0;
+            for (int i = 0; i<= 5; i++) {
+                id++;
+                if (id == 4) {
+                    System.out.println(«id: « + id);
+                    System.out.println(«nameOfPerson: « + name);
+                }
+            }
         }
 
     04. Уменьшение области видимости переменных до завершения первого цикла fori, после которого они не используются    
@@ -85,12 +85,12 @@
         ArrayList<String> list = new ArrayList<>();
         list.add(0, "");
         {
-        int indexForLIst = 0;
-        int countLen = len;
-        boolean newString = true;
-        for (int i = 0; i < text.length; i++) {
-            //много кода
-        }
+            int indexForLIst = 0;
+            int countLen = len;
+            boolean newString = true;
+            for (int i = 0; i < text.length; i++) {
+                //много кода
+            }
         }
         fori(){
             //код
@@ -130,16 +130,16 @@
     after:    
         //много кода
         {
-        int correctLength = 0;
-        while (valueToCorrect != 0) {
-            if (dop.charAt(dop.length() - 1) > 0 && dop.charAt(dop.length() - correctLength - 1) != '0') {
-                dop.setCharAt(dop.length() - correctLength - 1, (char) (dop.charAt(dop.length() - correctLength - 1) - 1));
-                valueToCorrect = 0;
-            } else {
-                dop.setCharAt(dop.length() - correctLength - 1, '9');
-                correctLength++;
+            int correctLength = 0;
+            while (valueToCorrect != 0) {
+                if (dop.charAt(dop.length() - 1) > 0 && dop.charAt(dop.length() - correctLength - 1) != '0') {
+                    dop.setCharAt(dop.length() - correctLength - 1, (char) (dop.charAt(dop.length() - correctLength - 1) - 1));
+                    valueToCorrect = 0;
+                } else {
+                    dop.setCharAt(dop.length() - correctLength - 1, '9');
+                    correctLength++;
+                }
             }
-        }
         }
         //код
 
@@ -160,11 +160,11 @@
         int timeOfAllWay = 0;
         int pointWay = 0;
         {
-        int varForTrafficLightsOperation;
-            for (int countTrafficLights = 0; countTrafficLights < track.length; countTrafficLights++) {
-            //много кода
-            }
-        varForTrafficLightsOperation = Integer.MIN_VALUE;
+            int varForTrafficLightsOperation;
+                for (int countTrafficLights = 0; countTrafficLights < track.length; countTrafficLights++) {
+                //много кода
+                }
+            varForTrafficLightsOperation = Integer.MIN_VALUE;
         }
         timeOfAllWay += L - pointWay;
         return timeOfAllWay;
