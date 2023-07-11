@@ -112,7 +112,7 @@
         }
     
     06. Здесь вижу уже много моментов, которые можно было бы переделать в соответствии с курсом
-        но непосредственно к теме - сужаю область видимости переменной correctLengt нигде более не используемой,кроме цикла
+        но непосредственно к теме - сужаю область видимости переменной correctLengt нигде более не используемой, кроме цикла
     before:
         //много кода
         int correctLength = 0;
@@ -170,12 +170,43 @@
         return timeOfAllWay;
 
     
-    08.
+    08. Здесь тоже уже вижу много моментов, но непосредственно - сужаю область видимости swap в пределы его использования
     before:
+        ArrayList<String []> data = new ArrayList<>();
+        ArrayList<String []> swap = new ArrayList<>();
+        //код
+
+        for (int i = 0; i < data.size(); i++) {
+            //код
+        }
+        for (int i = 0; i < data.size() - 1; i++) {
+            //код
+        }
+        String [] result = new String[data.size()];
+        for (int i = 0; i < data.size(); i++) {
+            result[i] = data.get(i)[0] + " " + data.get(i)[1];
+        }
+        return result;
 
 
     after:  
-    
+        ArrayList<String []> data = new ArrayList<>();
+        {
+            ArrayList<String []> swap = new ArrayList<>();
+            //код
+
+            for (int i = 0; i < data.size(); i++) {
+                //код
+            }
+            for (int i = 0; i < data.size() - 1; i++) {
+                 //код
+            }
+        }
+        String [] result = new String[data.size()];
+        for (int i = 0; i < data.size(); i++) {
+            result[i] = data.get(i)[0] + " " + data.get(i)[1];
+        }
+        return result;
     
     09.
     before:
