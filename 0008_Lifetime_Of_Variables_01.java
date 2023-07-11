@@ -273,37 +273,36 @@
             }
             return returnArray;
         }
-    
+
+Я так понимаю в Java не имеется глобальных переменных в полном смысле этого слова,
+В нижних примерах осуществлена минимизация области видимости переменной через минимальный доступ к ней (private)
+
     11.
     before:
-
-
+        ArrayList<String> addedCord;
     after:  
-    
+        private static ArrayList<String> addedCord;
     
     12.
     before:
-
-
+        int horizontalFieldSize;
     after:  
-    
+        private horizontalFieldSize;
     
     13.
     before:
-
-
+        String nameOfPlayer;
     after:  
-    
+        private String nameOfPlayer;
     
     14.
     before:
-
-
+        TypeOfPizza typeOfPizza;
     after:  
-    
+        private TypeOfPizza typeOfPizza;
     
     15.
     before:
-
-
+        int valueSizeOfPizza;
     after:  
+        private int valueSizeOfPizza;
