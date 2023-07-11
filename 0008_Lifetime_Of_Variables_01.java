@@ -242,12 +242,37 @@
         return resultTree;
     
     
-    10.
+    10. Ограничение области видимости переменной k:
     before:
-
+        private static int[] transform(int[] arr) {
+            ArrayList<Integer> array = new ArrayList<>();
+            int k;
+            for (int i = 0; i <= arr.length - 1; i++) {
+                //код
+            }
+            int[] returnArray = new int[array.size()];
+            for (int i = 0; i < array.size(); i++) {
+                returnArray[i] = array.get(i);
+            }
+            return returnArray;
+        }
 
     after:  
-    
+        private static int[] transform(int[] arr) {
+            ArrayList<Integer> array = new ArrayList<>();
+            {
+                int k;
+                for (int i = 0; i <= arr.length - 1; i++) {
+                    //код, где используется k
+                }
+            }
+        
+            int[] returnArray = new int[array.size()];
+            for (int i = 0; i < array.size(); i++) {
+                returnArray[i] = array.get(i);
+            }
+            return returnArray;
+        }
     
     11.
     before:
