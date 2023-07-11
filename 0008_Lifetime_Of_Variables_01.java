@@ -111,13 +111,96 @@
         return amount => 50;
         }
     
-    06.
+    06. Здесь вижу уже много моментов, которые можно было бы переделать в соответствии с курсом
+        но непосредственно к теме - сужаю область видимости переменной correctLengt нигде более не используемой,кроме цикла
+    before:
+        //много кода
+        int correctLength = 0;
+        while (valueToCorrect != 0) {
+            if (dop.charAt(dop.length() - 1) > 0 && dop.charAt(dop.length() - correctLength - 1) != '0') {
+                dop.setCharAt(dop.length() - correctLength - 1, (char) (dop.charAt(dop.length() - correctLength - 1) - 1));
+                valueToCorrect = 0;
+            } else {
+                dop.setCharAt(dop.length() - correctLength - 1, '9');
+                correctLength++;
+            }
+        }
+        //код
+
+    after:    
+        //много кода
+        {
+        int correctLength = 0;
+        while (valueToCorrect != 0) {
+            if (dop.charAt(dop.length() - 1) > 0 && dop.charAt(dop.length() - correctLength - 1) != '0') {
+                dop.setCharAt(dop.length() - correctLength - 1, (char) (dop.charAt(dop.length() - correctLength - 1) - 1));
+                valueToCorrect = 0;
+            } else {
+                dop.setCharAt(dop.length() - correctLength - 1, '9');
+                correctLength++;
+            }
+        }
+        }
+        //код
+
+
     07.
+    before:
+
+
+    after:  
+    
     08.
+    before:
+
+
+    after:  
+    
+    
     09.
+    before:
+
+
+    after:      
+    
+    
     10.
+    before:
+
+
+    after:  
+    
+    
     11.
+    before:
+
+
+    after:  
+    
+    
     12.
+    before:
+
+
+    after:  
+    
+    
     13.
+    before:
+
+
+    after:  
+    
+    
     14.
+    before:
+
+
+    after:  
+    
+    
     15.
+    before:
+
+
+    after:  
