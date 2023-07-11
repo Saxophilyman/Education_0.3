@@ -144,11 +144,31 @@
         //код
 
 
-    07.
+    07. Уменьшение области видимости переменной varForTrafficLightsOperation до завершения цикла fori:
     before:
-
+        int timeOfAllWay = 0;
+        int pointWay = 0;
+        int varForTrafficLightsOperation;
+            for (int countTrafficLights = 0; countTrafficLights < track.length; countTrafficLights++) {
+            //много кода
+            }
+        varForTrafficLightsOperation = Integer.MIN_VALUE;
+        timeOfAllWay += L - pointWay;
+        return timeOfAllWay;
 
     after:  
+        int timeOfAllWay = 0;
+        int pointWay = 0;
+        {
+        int varForTrafficLightsOperation;
+            for (int countTrafficLights = 0; countTrafficLights < track.length; countTrafficLights++) {
+            //много кода
+            }
+        varForTrafficLightsOperation = Integer.MIN_VALUE;
+        }
+        timeOfAllWay += L - pointWay;
+        return timeOfAllWay;
+
     
     08.
     before:
