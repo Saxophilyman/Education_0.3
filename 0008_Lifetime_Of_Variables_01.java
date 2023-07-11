@@ -208,11 +208,38 @@
         }
         return result;
     
-    09.
+    09. Локализация переменной year:
     before:
+        Integer[][] yearNumTree = new Integer[H][W];
+        String[] resultTree = new String[H];
+        //код
 
+        int year = 0;
+        while (year < N) {
+            for (int i = 0; i < yearNumTree.length; i++) {
+               //много кода
+            }
+            year++;
+        }
 
-    after:      
+        //код
+        return resultTree;
+
+    after:     
+        Integer[][] yearNumTree = new Integer[H][W];
+        String[] resultTree = new String[H];
+        //код
+        {
+            int year = 0;
+            while (year < N) {
+                for (int i = 0; i < yearNumTree.length; i++) {
+                   //много кода
+                }
+                year++;
+            }
+        }
+        //код
+        return resultTree;
     
     
     10.
