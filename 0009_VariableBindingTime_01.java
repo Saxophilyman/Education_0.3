@@ -65,4 +65,16 @@
         return global;
 
 
-3. 
+3. По времени позднего связывания возможно подойдёт этот пример.
+   Переменная BufferedImage img; изначально не определена и зависит от данных вводимых в программу, и в некоторой степени будет определена во время выполнении программмы.
+     
+   ArrayList<String> listFiles = new ArrayList<>(f(wayToDir, extensionFirst, false)).get(0);
+        BufferedImage img;
+        for (String file : listFiles) {
+            img = ImageIO.read(new File(wayToDir + "\\" + file));
+            if (img != null) {
+                File endFile = new File(wayToDir + "\\" + file.substring(0, file.length() - extensionFirst.length())
+                        + extensionEndless);
+                ImageIO.write(img, extensionEndless, endFile);
+            }
+        }
